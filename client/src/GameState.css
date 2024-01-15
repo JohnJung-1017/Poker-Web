@@ -1,0 +1,49 @@
+.game-state-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+    height: min-content;
+    margin-top: 30px;
+  }
+  
+  .board-title {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+  .board-cards {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    /* margin-bottom: 10px; */
+  }
+
+  .player-cards{
+    display: flex;
+  }
+  
+  .card {
+    width: 40px;
+    height: 60px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+  }
+  
+  .pot-title {
+    font-size: 16px;
+    
+  }
+  
+  .pot-amount {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 40px;
+  }
+  

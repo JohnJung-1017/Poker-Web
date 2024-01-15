@@ -1,0 +1,28 @@
+.ready-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #f2f2f2;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 150px;
+    height: 150px;
+  }
+  
+  .ready-row {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .ready-label {
+    font-weight: bold;
+    margin-right: 10px;
+  }
+  
+  .ready-value {
+    font-weight: normal;
+  }
+  

@@ -1,0 +1,54 @@
+.create-room-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #0d2839;
+}
+
+.create-room-content {
+  background-color: #ffffff;
+  padding: 40px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.create-room-content h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #0d2839;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 8px;
+  color: #0d2839;
+}
+
+input[type="text"] {
+  width: 100%;
+  padding: 10px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+}
+
+.create-room-button {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  border-radius: 4px;
+  border: none;
+  background-color: #0d2839;
+  color: #ffffff;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.create-room-button:hover {
+  background-color: #16415d;
+}

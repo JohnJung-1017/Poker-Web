@@ -1,0 +1,107 @@
+/* .game-container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  padding: 20px;
+  background-color: #f9f9f9;
+}
+
+.winner-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.seat-container {
+  position: relative;
+  width: 600px;
+  height: 600px;
+} */
+
+.start-button {
+  position: absolute;
+  bottom: 20px;
+  left: 90%;
+  transform: translateX(-50%,-50%);
+  padding: 10px 20px;
+  font-size: 18px;
+}
+
+.game-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgb(183, 179, 179);
+  
+}
+
+
+.seat-container{
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.player-1{
+  position: absolute;
+  top: 15%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.player-2{
+  position: absolute;
+  top: 25%;
+  left: 25%;
+  transform: translate(-50%, -50%);
+
+}
+.player-3{
+  position: absolute;
+  top: 70%;
+  left: 25%;
+  transform: translate(-50%, -50%);
+
+}
+.player-4{
+  position: absolute;
+  top: 75%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+}
+.player-5{
+  position: absolute;
+  top: 70%;
+  left: 75%;
+  transform: translate(-50%, -50%);
+
+}
+.player-6{
+  position: absolute;
+  top: 25%;
+  left: 75%;
+  transform: translate(-50%, -50%);
+
+}
+
+.gameState-container{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  /* background-color: aqua; */
+  width: 50vw;
+}

@@ -1,0 +1,56 @@
+.player-container {
+  background-color:gray;
+  color: #ffffff;
+  padding: 10px;
+  border-radius: 15px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  width: 200px;
+  height: 210px;
+}
+
+.player-username {
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+
+.player-cards {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 5px;
+}
+
+.card {
+  color: black;
+  display: inline-block;
+  width: 60px;
+  height: 90px;
+  background-color: #ffffff;
+  border-radius: 4px;
+  margin: 0 5px;
+  
+  font-size: 18px;
+  line-height: 90px;
+  text-align: center;
+}
+
+.player-stack {
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+
+.player-seat {
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+
+.player-bet {
+  font-size: 18px;
+  margin-top: 5px;
+  
+}
+
+.player-container.active {
+  background-color: #16415d;
+}
+
