@@ -2,9 +2,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-bottom: 20px;
-    height: min-content;
-    margin-top: 30px;
+    height: 85vh;
   }
   
   .board-title {
@@ -13,11 +11,12 @@
   }
   
   .board-cards {
+    position: absolute;
+    top: 35vh;
     display: flex;
     gap: 10px;
     justify-content: center;
     align-items: center;
-    /* margin-bottom: 10px; */
   }
 
   .player-cards{
@@ -36,14 +35,20 @@
     font-size: 24px;
   }
   
-  .pot-title {
-    font-size: 16px;
-    
+  .pot{
+    position: absolute;
+    top: 18vh;
+    display: flex;
+    flex-direction: row;
+
   }
-  
+  .pot-title {
+    font-size: 2rem;
+    color: rgb(202, 202, 202);
+  }
   .pot-amount {
-    font-size: 24px;
+    font-size: 2rem;
     font-weight: bold;
-    margin-bottom: 40px;
+    color: rgb(204, 204, 204);
   }
   

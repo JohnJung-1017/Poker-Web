@@ -1,32 +1,36 @@
-.create-room-container {
+.createRoom_container {
+  z-index: 1;
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
-  background-color: #0d2839;
+  background-color: rgb(39, 39, 39);
+  position: relative;
 }
 
-.create-room-content {
-  background-color: #ffffff;
+.createRoom_content {
+  z-index: 5;
+  background-color: transparent;
+  border: 3px solid #777777;
   padding: 40px;
   border-radius: 8px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-.create-room-content h2 {
+.createRoom_content h2 {
   font-size: 24px;
   margin-bottom: 20px;
-  color: #0d2839;
+  color: white;
 }
 
-.form-group {
+.form_group {
   margin-bottom: 20px;
 }
 
 label {
   display: block;
   margin-bottom: 8px;
-  color: #0d2839;
+  color: orange;
 }
 
 input[type="text"] {
@@ -35,20 +39,48 @@ input[type="text"] {
   border-radius: 4px;
   border: 1px solid #ccc;
   font-size: 14px;
+  background-color: transparent;
+  color: white;
 }
 
-.create-room-button {
+.createRoom_button {
   display: block;
   width: 100%;
   padding: 10px;
   border-radius: 4px;
   border: none;
-  background-color: #0d2839;
+  background-color: orange;
   color: #ffffff;
   font-size: 16px;
   cursor: pointer;
+  border: 2px solid rgb(39, 39, 39);
+}
+.userName{
+  color: white;
 }
 
-.create-room-button:hover {
-  background-color: #16415d;
+.createRoom_button:hover {
+  background-color: rgb(242, 196, 111);
+}
+.createRoom_triangle_left{
+  z-index: 3;
+  position: absolute;
+  left: 0;
+  width: 0;
+  height: 0;
+  border-bottom: 50vh solid orange;
+  border-top: 50vh solid transparent;
+  border-left: 0 solid orange;
+  border-right: 50vh solid transparent;
+}
+.createRoom_triangle_right{
+  z-index: 3;
+  position: absolute;
+  right: 0;
+  width: 0;
+  height: 0;
+  border-bottom: 50vh solid transparent;
+  border-top: 50vh solid orange;
+  border-left: 50vh solid transparent;
+  border-right: 0 solid orange;
 }
