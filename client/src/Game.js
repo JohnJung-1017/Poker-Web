@@ -5,6 +5,7 @@ import Seat from './Seat';
 import Player from './Player';
 import EmptyPlayer from './EmptyPlayer';
 import GameState from './GameState';
+import nicePoker from './image/redTable.png';
 
 import './Game.css';
 
@@ -200,11 +201,21 @@ function Game({ socket }) {
     socket.emit('start-game', roomId);
   };
 
+    const backgroundImageStyle = {
+      backgroundImage: `url(${nicePoker})`,
+      backgroundSize: 'cover',
+      backgroundPosition: 'center',
+      backgroundRepeat: 'no-repeat',
+    };
+  
+
 
   return (
     <div className="game-container">
-      {isGameResultReceived ? renderWinner() : null}
-      <div className='gameState-container'>
+      <div className='canvas'>
+        <div className='table' style={backgroundImageStyle}>
+          {isGameResultReceived ? renderWinner() : null}
+          <div className='gameState-container'>
         {isGameStart ? (
           <GameState
             communityCards={communityCards}
@@ -212,16 +223,30 @@ function Game({ socket }) {
             pot={pot}
           />
         ) : null}
-      </div>
+          </div>
       
-      {isGameStart ? renderGame() : renderSeats()}
+          {isGameStart ? renderGame() : renderSeats()}
       
       
-      {!isGameStart && players.length >= 2 ? (
+          {!isGameStart && players.length >= 2 ? (
         <button className="start-button" onClick={onClickHandler}>
           Start
         </button>
-      ) : null}
+        ) : null}
+        </div>
+        <div className='underBar'>
+        <div class="underBar_chatting">
+                        <div class="underBar_chatting_icon">
+                            
+                        </div>
+                    </div>
+                    <div class="underBar_join">
+                        JOIN
+                        <div class="underBar_join_contact">
+                        </div>
+                    </div>
+        </div>
+      </div>
     </div>
   );
 }

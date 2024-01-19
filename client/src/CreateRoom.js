@@ -33,11 +33,11 @@ function CreateRoom({ socket }) {
   };
 
   return (
-    <div className="create-room-container">
-      <div className="create-room-content">
-        <h2>Create Room</h2>
+    <div className="createRoom_container">
+      <div className="createRoom_content">
+        <h2>Create New Game</h2>
         <form onSubmit={handleSubmit}>
-          <div className="form-group">
+          <div className="form_group">
             <label htmlFor="userName">User Name:</label>
             <input
               type="text"
@@ -46,7 +46,7 @@ function CreateRoom({ socket }) {
               onChange={handleUserNameChange}
             />
           </div>
-          <div className="form-group">
+          <div className="form_group">
             <label htmlFor="stack">Stack:</label>
             <input
               type="text"
@@ -55,11 +55,13 @@ function CreateRoom({ socket }) {
               onChange={handleStackChange}
             />
           </div>
-          <button type="submit" className="create-room-button">
+          <button type="submit" className="createRoom_button">
             Create Room
           </button>
         </form>
       </div>
+      <div className="createRoom_triangle_left"></div>
+      <div className="createRoom_triangle_right"></div>
     </div>
   );
 }

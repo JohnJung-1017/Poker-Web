@@ -18,9 +18,12 @@ function GameState({ communityCards, currentRound, pot }) {
         ))}
         {emptyCards}
       </div>
-      <div className="pot-title">Pot:</div>
-      <p className="pot-amount">{pot}</p>
+      <div className="pot">
+        <div className="pot-title">Pot:</div>
+        <p className="pot-amount">{pot}</p>
+      </div>
     </div>
+    
   );
 }
 
