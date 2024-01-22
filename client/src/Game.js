@@ -104,7 +104,7 @@ function Game({ socket }) {
   }, [isGameResultReceived, roomId, socket]);
 
   const renderSeats = () => {
-    const maxSeats = 6; // 최대 좌석 수
+    const maxSeats = 8; // 최대 좌석 수
     const renderedSeats = [];
 
     for (let i = 1; i <= maxSeats; i++) {
@@ -122,6 +122,10 @@ function Game({ socket }) {
         playerClassName = "player-5";
       }else if(i === 6){
         playerClassName = "player-6";
+      }else if(i === 7){
+        playerClassName = "player-7";
+      }else if(i === 8){
+        playerClassName = "player-8";
       }
       if (player) {
         renderedSeats.push(<Ready key={player.socketId} userName={player.userName} stack={player.stack} seat_no={player.seat_no} className={playerClassName}/>);
@@ -162,6 +166,10 @@ function Game({ socket }) {
         playerClassName = "player-5";
       }else if(i === 6){
         playerClassName = "player-6";
+      }else if(i === 7){
+        playerClassName = "player-7";
+      }else if(i === 8){
+        playerClassName = "player-8";
       }
       if (player) {
         renderedPlayers.push(
